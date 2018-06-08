@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0E68C" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用	户："
+                android:textColor="#2F4F4F" />
+
+            <EditText
+                android:id="@+id/register_User"
+                android:layout_width="178dp"
+                android:background="@drawable/bg_button"
+                 android:maxLines="1"
+                android:layout_height="wrap_content" >
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_margin="5dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密	码："
+                android:textColor="#2F4F4F" />
+
+            <EditText
+                android:id="@+id/register_Password"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button"
+                 android:maxLines="1"
+                android:inputType="textPassword" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+             android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定密码"
+                android:textColor="#2F4F4F" />
+
+            <EditText
+                android:id="@+id/register_RePassword"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button"
+                 android:maxLines="1"
+                android:inputType="textPassword" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+             android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="座位号："
+                android:textColor="#2F4F4F" />
+
+            <EditText
+                android:id="@+id/register_num"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content" 
+                android:maxLines="1"
+                android:background="@drawable/bg_button"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tableLayout1"
+        android:layout_alignRight="@+id/tableLayout1"
+        android:layout_below="@+id/tableLayout1"
+         android:background="@drawable/button_selector"
+        android:layout_marginTop="40dp"
+        android:text="注	册" />
+
+</RelativeLayout>
